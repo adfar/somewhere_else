@@ -148,6 +148,7 @@
 
   .review-section ul {
     padding-left: 1.5rem;
+    list-style: none; 
   }
 
   .review-section li {
