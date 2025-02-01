@@ -158,6 +158,19 @@
     margin-bottom: 0.5rem;
   }
 
+  .pros ul, .cons ul {
+    list-style: none;  
+    padding-left: 0;   
+}
+
+  .pros li::before {
+      content: "✓ ";
+  }
+
+  .cons li::before {
+      content: "× ";
+  }
+
   
   .review-text {
     font-size: 1.25rem;
