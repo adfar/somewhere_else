@@ -146,14 +146,14 @@
     color: var(--cons-color);
   }
 
-.pros p, .cons p {
-  display: block;
-  margin-bottom: 1rem;
-}
+  .pros p, .cons p {
+    display: block;
+    margin-bottom: 1rem;
+  }
 
-.pros p:last-child, .cons p:last-child {
-  margin-bottom: 0;
-}
+  .pros p:last-child, .cons p:last-child {
+    margin-bottom: 0;
+  }
   
   .review-text {
     font-size: 1.25rem;
