@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['165.227.64.163', 'localhost', '127.0.0.1']
 USE_X_FORWARDED_HOST = False
+FORCE_SCRIPT_NAME = '/somewhere_else'
 
 
 # Application definition
