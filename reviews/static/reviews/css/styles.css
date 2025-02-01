@@ -148,7 +148,6 @@
 
   .review-section ul {
     padding-left: 1.5rem;
-    list-style-type: disc;
   }
 
   .review-section li {
@@ -161,7 +160,7 @@
   .pros ul, .cons ul {
     list-style: none;  
     padding-left: 0;   
-}
+  }
 
   .pros li::before {
       content: "✓ ";
