@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Business Reviews</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'reviews/css/styles.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap">
+</head>
+<body>
+  <div class="page-header">
+    <div class="container">
+      <h1>Somewhere Else</h1>
+    </div>
+  </div>
+  
+  <div class="container">
+    {% for review in reviews %}
+      <div class="review-card">
+        <div class="review-header">
+          <h3 class="review-title">{{ review.title }}</h3>
+          <div class="rating">
+            <div class="rating-label">Rating</div>
+            <div class="rating-score">{{ review.rating }}<span class="rating-max">/10</span></div>
+          </div>
+        </div>
+        
+        <div class="review-content">
+          <div class="review-section pros">
+            <h5>What We Loved</h5>
+            <p>{{ review.pros }}</p>
+          </div>
+          <div class="review-section cons">
+            <h5>Room for Improvement</h5>
+            <p>{{ review.cons }}</p>
+          </div>
+        </div>
+        
+        <p class="review-text">{{ review.review_text }}</p>
+        
+        <a href="{{ review.link }}" class="button" target="_blank">
+          Visit Business
+          <svg class="button-arrow" viewBox="0 0 24 24" width="18" height="18">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
