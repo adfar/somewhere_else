@@ -146,14 +146,18 @@
     color: var(--cons-color);
   }
 
-  .pros p, .cons p {
-    display: block;
-    margin-bottom: 1rem;
+  .review-section ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
   }
 
-  .pros p:last-child, .cons p:last-child {
-    margin-bottom: 0;
+  .review-section li {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
   }
+
   
   .review-text {
     font-size: 1.25rem;

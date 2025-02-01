@@ -10,12 +10,8 @@ class Review(models.Model):
             MaxValueValidator(10, message="Rating cannot be higher than 10")
         ]
     )
-    pros = models.TextField(
-        help_text="What did you love about this business?"
-    )
-    cons = models.TextField(
-        help_text="What could be improved?"
-    )
+    pros = models.JSONField(default=list)
+    cons = models.JSONField(default=list)
     review_text = models.TextField(
         help_text="Your detailed review"
     )

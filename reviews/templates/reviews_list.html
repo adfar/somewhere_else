@@ -29,11 +29,19 @@
         <div class="review-content">
           <div class="review-section pros">
             <h5>What We Loved</h5>
-            <p>{{ review.pros }}</p>
+            <ul>
+              {% for pro in review.pros %}
+                <li>{{ pro }}</li>
+              {% endfor %}
+            </ul>
           </div>
           <div class="review-section cons">
             <h5>Room for Improvement</h5>
-            <p>{{ review.cons }}</p>
+            <ul>
+              {% for con in review.cons %}
+                <li>{{ con }}</li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
         
