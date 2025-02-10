@@ -58,4 +58,19 @@
     {% endfor %}
   </div>
 </body>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "LocalBusiness",
+      "name": "{{ review.business_name }}"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "{{ review.rating }}"
+    },
+    "reviewBody": "{{ review.review_text }}"
+  }
+  </script>
 </html>
